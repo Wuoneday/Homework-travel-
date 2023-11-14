@@ -1,0 +1,57 @@
+// 讓div跟nav水平排列
+header {
+    display: flex;
+    // 讓nav垂直置中及隨畫面大小換行
+    align-items: center;
+    flex-wrap: wrap;
+
+    // 鎖定標題列
+    position: sticky;
+    // 要有這個參數不然sticky不會有效果
+    top: 0;
+    // 要大於下方的0，才不會被蓋住
+    z-index: 1;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px #757474;
+
+    // 讓img跟h1水平排列
+    div.logo {
+        display: flex;
+        align-items: center;
+        // 調空間(伸展比、收縮比、基準值)
+        flex: 5 1 400px;
+        // 距左側間隔
+        margin-left: 2rem;
+
+        img {
+            width: 6vw;
+            height: 6vw;
+        }
+    }
+
+    // 讓nav內容水平排列，去除標點、底線等
+    nav {
+        flex: 2 1 400px;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+
+            li {
+                a {
+                    color: #09777d;
+                    text-decoration: none;
+                    font-size: 1.35rem;
+
+                    &:hover{
+                        color: #FFFFFF;
+                        background-color: #09777D;
+                        padding: 0rem 1rem;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

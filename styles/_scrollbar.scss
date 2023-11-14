@@ -1,0 +1,16 @@
+// 捲軸
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #DBDBE5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #50697D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3D313F;
+}

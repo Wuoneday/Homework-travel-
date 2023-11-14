@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏威夷旅遊租借服務|關於我們</title>
+    <meta name="description" content="我們提供夏威夷旅遊租借服務，例如：衝浪板、車子、帳篷等等">
+    <meta name="robots" content="index, follow">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- scss -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <header>
+        <div class="logo">
+            <img src="/images/black logo.svg" alt="LOGO">
+            <h1>夏威夷旅遊租借服務</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" target="_top">首頁</a></li>
+                <li><a href="about.html" target="_blank">關於我們</a></li>
+                <li><a href="login.html" target="_blank">會員登入</a></li>
+                <li><a href="contact.html" target="_blank">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 pt-5">
+                    <div class="card">
+                        <div class="card-header text-white" style="background-color: #18948C;">
+                            <h3 class="fw-bold">會員登入</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <!-- 帳號 -->
+                            <div class="mb-3">
+                                <label for="username" class="form-label">帳號:</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="信箱或手機號碼">
+                            </div>
+                            <!-- 密碼 -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">密碼</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="含英文大(小)寫及數字">
+                            </div>
+                            <!-- 密碼提示 -->
+                            <div class="mb-3">
+                                 <a href="#" class="fs-6 text-decoration-none">忘記密碼?</a>
+                            </div>
+                            <!-- 按鈕-->
+                            <div class="text-start mb-3">
+                                <button class="btn btn-warning text-white" id="ok_btn">確認</button>
+                                <button class="btn btn-secondary" id="cancel_btn">取消</button>
+                            </div>
+                            <h3 class="fw-bold mb-3">還不是會員?</h3>
+                            <div>
+                                <button class="btn border-warning text-warning w-100" id="register_btn">註冊會員</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+</body>

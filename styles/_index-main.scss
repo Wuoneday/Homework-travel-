@@ -1,0 +1,129 @@
+main {
+    section.backImage {
+        // 設為背景圖就永遠是最底層
+        background-image: url(/images/pexels-photo-416676.jpeg);
+        min-height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        // 以現在位置當成新的位置
+        position: relative;
+        // Z軸-h3跟button圖層為0
+        z-index: 0;
+
+        // 加上濾鏡效果
+        div.filter {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            min-height: 90vh;
+            // 以父層當成定位點(section)
+            position: absolute;
+            top: 0;
+            // 透明圖圖層為-1，才不會蓋到文字及按鈕
+            z-index: -1;
+        }
+
+        // 將文字及按鈕水平排列，水平及垂直置中
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // 變成垂直排列，文字置中
+        flex-direction: column;
+        text-align: center;
+
+        // 調整文字格式
+        h3 {
+            font-size: 3.5rem;
+            color: white;
+            margin: 2rem 0rem;
+        }
+
+        // 調整按鈕格式
+        button.start {
+            background-color: #A8BCBA;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 1.5rem;
+            color: white;
+            // 改變滑鼠形狀
+            cursor: pointer;
+        }
+    }
+
+    // 調為垂直排列，並做置中
+    section.second {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        // 調整字體及間距
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0rem;
+        }
+
+        section.cards {
+            display: flex;
+            // 拿掉框線
+            // border: solid 2px red;
+            width: 80%;
+            // 改min-height內容才不會溢出
+            min-height: 80vh;
+            // 設定換行
+            flex-wrap: wrap;
+
+            div.card {
+                // border: solid 2px blue;
+                // 將img,h4,p,a,調整為垂直排列
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+                // 設定基準值300px
+                flex: 1 1 300px;
+
+                div.img-container {
+                    // 圖變大但超出範圍部分隱藏，類觀景窗
+                    overflow: hidden;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+
+                    img {
+                        width: 15vw;
+                        height: 15vw;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                    }
+
+                    // 滑鼠移到變大
+                    img:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                h4 {
+                    font-size: 2rem;
+                    margin: 1rem 0rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    padding: 1rem 1.5rem;
+                    background-color: #09777d;
+                    color: white;
+                    font-size: 1.25rem;
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+    }
+}

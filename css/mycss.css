@@ -1,0 +1,31 @@
+:root {
+    /* 冷酷變色龍 */
+    --mycolor01: #D9CFE7;
+    --mycolor02: #A8BCBA;
+    --mycolor03: #ACC66D;
+    --mycolor04: #50697D;
+    /* 海綠色    */
+    --mycolor05: #97BAA4;
+    --mycolor06: #499360;
+    --mycolor07: #295651;
+    --mycolor08: #232941;
+    /* 和平與寧靜 */
+    --mycolor09: #dcc1B0;
+    --mycolor10: #869DAB;
+    --mycolor11: #847072;
+    --mycolor12: #3D313F;
+    /* 山際旅行 */
+    --mycolor13: #DBDBE5;
+    --mycolor14: #A5B7C1;
+    --mycolor15: #535D55;
+    --mycolor16: #514644;
+    /* 赤陶大理石 */
+    --mycolor17: #D8B484;
+    --mycolor18: #B16B2F;
+    --mycolor19: #C76331;
+    --mycolor20: #9A2513;
+}
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
